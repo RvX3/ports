@@ -46,12 +46,14 @@ void onLoad() {
     modules.registerSlider("Y Offset", "px", 5, 0, displaySize[1], 1);
     modules.registerSlider("Outline Mode", "", 0, new String[]{"Disabled", "Left", "Right", "Full"});
     
-    configureSuffixFromArray("KillAura", "Autoblock", new String[]{"Manual", "Vanilla", "Damage", "Fake", "Partial", "Swap", "Interact A", "Interact B", "Interact C"});
+    configureSuffixFromArray("KillAura", "Autoblock", new String[]{"Manual", "Vanilla", "Partial", "Via A", "Via B", "Post", "Switch"});
     configureSuffixFromSliders("Velocity", "%h% %v%", new String[]{"Horizontal", "Vertical"});
     configureSuffixFromSliders("AntiKnockback", "%h% %v%", new String[]{"Horizontal", "Vertical"});
-    configureSuffixFromArray("Bhop", "Mode", new String[]{"Strafe", "Ground", "Glide", "7 tick", "8 tick strafe", "9 tick", "9 tick strafe", "Hurt time"});
-    configureSuffixFromArray("NoFall", "Mode", new String[]{"Spoof", "Single", "Extra", "NoGround A", "NoGround B", "Precision", "Position"});
+    configureSuffixFromArray("Bhop", "Mode", new String[]{"Strafe", "Ground", "9 Tick", "8 tick", "7 tick"});
+    configureSuffixFromArray("NoFall", "Mode", new String[]{"Spoof", "NoGround", "Packet A", "Packet B", "CTW Packet", "Precision"});
     configureStaticSuffix("AntiVoid", "Blink");
+    configureStaticSuffix("BedAura", "Swap");
+    configureSuffixFromArray("NoSlow", "Mode", new String[]{"Vanilla", "Pre", "Post", "Alpha", "Offset"});
     
     modules.registerDescription("by @desiyn");
 }
