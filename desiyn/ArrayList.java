@@ -54,7 +54,7 @@ void onLoad() {
     configureStaticSuffix("AntiVoid", "Blink");
     configureStaticSuffix("BedAura", "Swap");
     configureSuffixFromArray("NoSlow", "Mode", new String[]{"Vanilla", "Pre", "Post", "Alpha", "Offset"});
-    configureStaticSuffix("Scaffold", "Dynamic")
+    configureStaticSuffix("Scaffold", "Dynamic");
     
     modules.registerDescription("by @desiyn");
 }
