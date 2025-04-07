@@ -50,9 +50,9 @@ void onLoad() {
     configureSuffixFromSliders("Velocity", "%h% %v%", new String[]{"Horizontal", "Vertical"});
     configureSuffixFromSliders("AntiKnockback", "%h% %v%", new String[]{"Horizontal", "Vertical"});
     configureSuffixFromArray("Bhop", "Mode", new String[]{"Strafe", "Ground", "9 Tick", "8 tick", "7 tick"});
-    configureSuffixFromArray("NoFall", "Mode", new String[]{"Spoof", "NoGround", "Packet A", "Packet B", "CTW Packet", "Precision"});
+    configureSuffixFromArray("NoFall", "Mode", new String[]{"Spoof", "NoGround", "Packet A", "Packet B", "CTW Packet", "Precision", "Blink"});
     configureStaticSuffix("AntiVoid", "Blink");
-    configureStaticSuffix("BedAura", "Swap");
+    configureStaticSuffix("BedNuker", "Swap");
     configureSuffixFromArray("NoSlow", "Mode", new String[]{"Vanilla", "Pre", "Post", "Alpha", "Offset"});
     configureStaticSuffix("Scaffold", "Dynamic");
     
