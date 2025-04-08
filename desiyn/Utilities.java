@@ -596,10 +596,11 @@ void sendModuleAlert(String title, String message, boolean enabled) {
 /* Queue Commands */
 void initializeQueueCommands() {
     // Bedwars commands
-    addCommand(new String[]{"1s"}, "bedwars_eight_one");
-    addCommand(new String[]{"2s"}, "bedwars_eight_two");
-    addCommand(new String[]{"3s"}, "bedwars_four_three");
-    addCommand(new String[]{"4s"}, "bedwars_four_four");
+    addCommand(new String[]{"p"}, "bedwars_practice");
+    addCommand(new String[]{"1"}, "bedwars_eight_one");
+    addCommand(new String[]{"2"}, "bedwars_eight_two");
+    addCommand(new String[]{"3"}, "bedwars_four_three");
+    addCommand(new String[]{"4"}, "bedwars_four_four");
     addCommand(new String[]{"4v4"}, "bedwars_two_four");
     addCommand(new String[]{"2r"}, "bedwars_eight_two_rush");
     addCommand(new String[]{"4r"}, "bedwars_four_four_rush");
@@ -628,6 +629,7 @@ void initializeQueueCommands() {
     addCommand(new String[]{"sbs"}, "build_battle_speed_builders");
 
     // Game display names
+    GAME_NAMES.put("bedwars_practice", "Bedwars Practice");
     GAME_NAMES.put("bedwars_eight_one", "Solo Bedwars");
     GAME_NAMES.put("bedwars_eight_two", "Doubles Bedwars");
     GAME_NAMES.put("bedwars_four_three", "3v3v3v3 Bedwars");
@@ -702,7 +704,7 @@ boolean onPacketSent(CPacket packet) {
 
 void showQueueHelp() {
     client.print("&7[&dR&7] Queue Commands:");
-    client.print("&7- Bedwars: &f/q 1s&7, &f/q 2s&7, &f/q 3s&7, &f/q 4s&7, &f/q 4v4");
+    client.print("&7- Bedwars: &f/q 1&7, &f/q 2&7, &f/q 3&7, &f/q 4&7, &f/q 4v4, &f/q p");
     client.print("&7- Rush: &f/q 2r&7, &f/q 4r");
     client.print("&7- Castle: &f/q c");
     client.print("&7- Skywars: &f/q sn&7, &f/q si&7, &f/q tn&7, &f/q ti");
